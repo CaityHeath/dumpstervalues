@@ -9,7 +9,8 @@ import glove from './assets/glove.svg';
 import ladyhat from './assets/ladyhat.svg';
 import trousers from './assets/trousers.svg';
 import sunglasses from './assets/sunglass.svg';
-import purse from './assets/purse.svg'
+import purse from './assets/purse.svg';
+import boots from './assets/boot.svg';
 
 const getRandomCoordinates = () => {
   let min = 1;
@@ -22,7 +23,7 @@ const getRandomCoordinates = () => {
 
 
 const getImage = () => {
-  const images = [dress, cowboy, coat, glove, ladyhat, trousers, sunglasses, purse];
+  const images = [dress, cowboy, coat, glove, ladyhat, trousers, sunglasses, purse, boots];
   let max = images.length;
   let pos = Math.floor(Math.random() * max);
   console.log(images[pos]);
