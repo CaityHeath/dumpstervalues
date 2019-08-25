@@ -1,9 +1,10 @@
 .game-area{
  position: relative;
  margin: 50px auto;
- width: 500px;
- height: 500px;
- border: 2px solid #000;  
+width: 50vw;
+height: 50vh;
+ border: 5px solid #000;
+ margin-bottom: 30px;
 }
 
 .snake-dot{
@@ -20,4 +21,23 @@
   width: 15%;
   height:15%;
   z-index: 1;
+}
+
+h1{
+  text-align: center;
+}
+
+button{
+  margin-left: 45%;
+  border: none;
+  text-decoration: none;
+  background: lightcoral;
+  width: 10em;
+  height: 5em;
+}
+
+.logo{
+  margin-left: 15%;
+  margin-top: 15px;
+  width: 75%;
 }
