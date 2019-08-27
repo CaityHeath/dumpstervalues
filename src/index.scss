@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 .game-area{
  position: relative;
  margin: 50px auto;
 width: 50vw;
 height: 50vh;
- border: 5px solid #000;
+ border: 3.5px solid #000;
  margin-bottom: 30px;
 }
 
@@ -50,7 +50,7 @@ button{
   justify-content: center;
      img{
       width: 70%;
-   
+      height: 10%;
     }
 }
 
@@ -60,12 +60,14 @@ button{
 }
 
 .bio{
-  font-family:'Source Sans Pro', sans-serif;
-  font-size: 24px;
+  font-family:'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  color: #333333;
 }
 
 .footer-content{
-  font-family:'Source Sans Pro', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 18px;
   border-top: 2px solid black;
   margin: 15% 15% 0% 15%;
   div{
@@ -74,3 +76,25 @@ button{
 }
 
 
+.nav-bar{
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 2% 15% 0% 15%;
+  border-bottom: 2px solid black; 
+  ul{
+    list-style-type: none; 
+    display: flex;
+    justify-content:center;
+    li{
+      margin: 7% 8% 0% 8%;
+      float: left;
+      a{
+        text-decoration: none;
+        color: #333333;
+      &:hover{
+        color: lightcoral;
+      } 
+      }
+    }
+  }
+
+}
