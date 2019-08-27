@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import Game from './game';
 import {When} from './conditionals.js';
 import Information from './information.js'
-import Logo from './assets/nofuzzdvheader.png'
+import Header from './header.js'
+
 
 class App extends Component{
   state = {
@@ -17,12 +18,14 @@ class App extends Component{
   render(){
     return (
       <>
-        <When condition={this.state.gameCondition}>
-          <img className="logo" src={Logo} alt="logo"/>
+        <Header/>
+        <When condition={this.state.gameCondition} >
           <Game/> 
-          <button onClick={this.handleClick}> Enter </button>  
+          <div className="btn-container">
+            <button onClick={this.handleClick}> Enter </button>   
+          </div>
+         
         </When>
-        
        
         <When condition={this.state.condition}>
           <Information/>

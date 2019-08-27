@@ -3,13 +3,10 @@ import React, { Component } from 'react';
 import Snake from './snake.js';
 import Food from './food.js';
 import dress from './assets/dress.svg';
-import coat from './assets/coat.svg';
 import cowboy from './assets/cowboy.svg';
 import glove from './assets/glove.svg';
 import ladyhat from './assets/ladyhat.svg';
-import trousers from './assets/trousers.svg';
 import sunglasses from './assets/sunglass.svg';
-import purse from './assets/purse.svg';
 import boots from './assets/boot.svg';
 
 const getRandomCoordinates = () => {
@@ -23,7 +20,7 @@ const getRandomCoordinates = () => {
 
 
 const getImage = () => {
-  const images = [dress, cowboy, coat, glove, ladyhat, trousers, sunglasses, purse, boots];
+  const images = [dress, cowboy, glove, ladyhat, sunglasses, boots];
   let max = images.length;
   let pos = Math.floor(Math.random() * max);
   console.log(images[pos]);

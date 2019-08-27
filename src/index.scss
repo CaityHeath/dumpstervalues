@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+.game-area{
+ position: relative;
+ margin: 50px auto;
+width: 50vw;
+height: 50vh;
+ border: 5px solid #000;
+ margin-bottom: 30px;
+}
+
+.snake-dot{
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  background-color: lightcoral;
+  border: 2px solid #fff; 
+  z-index: 2;
+}
+
+.snake-food{
+  position: absolute;
+  width: 18%;
+  height:18%;
+  z-index: 1;
+}
+
+h1{
+  text-align: center;
+}
+
+button{
+  border: none;
+  text-decoration: none;
+  background: lightcoral;
+  width: 6em;
+  height: 3em;
+  font-family:'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.header-container a{
+  margin-top: 20px;
+  display:flex;
+  justify-content: center;
+     img{
+      width: 70%;
+   
+    }
+}
+
+.information-container{
+  margin: 5% 15% 0% 15%;
+
+}
+
+.bio{
+  font-family:'Source Sans Pro', sans-serif;
+  font-size: 24px;
+}
+
+.footer-content{
+  font-family:'Source Sans Pro', sans-serif;
+  border-top: 2px solid black;
+  margin: 15% 15% 0% 15%;
+  div{
+    margin-top: 1%;
+  }
+}
+
+
