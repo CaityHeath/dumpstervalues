@@ -1,21 +1,40 @@
 import React, { Component } from 'react';
-import Gallery from './gallery.js'
-import Sell from './sell.js';
-import Events from './events.js';
+import gallery from './gallery.js';
+import sell from './sell.js';
+import events from './events.js';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+
+
 
 class SubHeader extends Component{
+
   render(){
     return(
-      <div className="nav-bar">
-        <ul >
+      <Router>
+        <div className="nav-bar">
+         <ul >
+   
+          <li>
+            <Link to="/gallery"> Gallery </Link>
+          </li>
+          <li>
+            <Link to="/sell"> Sell Clothes </Link>
+          </li>
+          <li>
+            <Link to="/events"> Events </Link>
 
-          <li><a href={Gallery}>Gallery</a></li>
-          <li><a href={Sell}>Sell Clothes</a></li>
-          <li><a href={Events}>Events</a></li>
-        </ul>  
+          </li>
+         </ul>
+
+
+         <Route path="/gallery" component={gallery}/>
+         <Route path="/sell" component={sell}/>
+         <Route path="/events" component={events}/>
+
       </div>
+      </Router>
 
-    )
+    );
   }
 }
 
